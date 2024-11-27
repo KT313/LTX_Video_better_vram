@@ -337,7 +337,7 @@ def main():
     }
 
     pipeline = LTXVideoPipeline(**submodel_dict)
-    if torch.cuda.is_available() and args.disable_load_needed_only:
+    if torch.cuda.is_available():
         pipeline = pipeline.to("cuda")
 
     # Prepare input for the pipeline
