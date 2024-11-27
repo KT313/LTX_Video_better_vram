@@ -249,7 +249,6 @@ def main():
     parser.add_argument(
         "--disable_load_needed_only",
         action="store_true",
-        default=False,
         help="disables load_needed_only, which loads text encoder only when needed and unloads transformer model before vae decoding",
     )
 
